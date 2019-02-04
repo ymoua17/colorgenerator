@@ -20,14 +20,14 @@ class App extends Component {
     this.handleChange2 = this.handleChange2.bind(this);
     this.degreeChange = this.degreeChange.bind(this)
   }
-  handleChange1(event) {
+  handleChange1(color) {
     this.setState({
-      color1: event.target.value
+      color1: color.hex
     })
   }
-  handleChange2(event) {
+  handleChange2(color) {
     this.setState({
-      color2: event.target.value
+      color2: color.hex
     })
   }
   degreeChange(event) {
