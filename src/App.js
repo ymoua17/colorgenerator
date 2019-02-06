@@ -3,7 +3,7 @@ import Colors from './Colors/Colors';
 import Specifications from './Specifications/Specifications';
 import Code from './Code/Code';
 import './App.css';
-
+import 'tachyons';
 
 
 const body = document.getElementById('gradient');
@@ -39,13 +39,13 @@ class App extends Component {
   render() {
     const { color1, color2, degree } = this.state;
     const changeBackground = (c1, c2, d) => {
-      body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2})`;	
+      body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2})`;
   }
     changeBackground(color1, color2, degree);
 
     return (
       <div className="App">
-        <h1>Color Generator</h1>
+        <h1 className="f1 underline">Color Generator</h1>
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={body.style.background}/>
