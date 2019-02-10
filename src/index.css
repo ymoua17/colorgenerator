@@ -4,7 +4,6 @@ body {
   font-family: -Consolas, monaco, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  touch-action: none;
   align-content: center;
 }
 #root {
