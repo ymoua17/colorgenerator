@@ -8,6 +8,7 @@ body {
 }
 #root {
   width: 100wh;
+  height: 100vh;
   background-size: 100%;
 }
 

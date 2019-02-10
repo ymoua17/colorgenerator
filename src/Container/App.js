@@ -63,7 +63,7 @@ class App extends Component {
     changeBackground(color2, color1, degree);
 
     return (
-      <div className="App">
+      <div className="App pv4">
         <h1 className="f1 underline">Color Generator</h1>
         <button className="grow dib pointer" onClick={this.randomButton}>Randmonize!</button>
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
