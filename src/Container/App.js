@@ -69,11 +69,9 @@ class App extends Component {
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={body.style.background}/>
-        <div>
-          <CopyToClipboard text={body.style.background}>
-            <button className="grow dib pointer">Copy to clipboard!</button>
-          </CopyToClipboard>
-        </div>
+        <CopyToClipboard text={body.style.background}>
+          <button className="grow dib pointer">Copy to clipboard!</button>
+        </CopyToClipboard>
       </div>
     );
   }
