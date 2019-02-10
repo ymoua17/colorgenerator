@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Colors from './Colors/Colors';
-import Specifications from './Specifications/Specifications';
-import Code from './Code/Code';
+import Colors from '../Components/Colors/Colors';
+import Specifications from '../Components/Specifications/Specifications';
+import Code from '../Components/Code/Code';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './App.css';
 import 'tachyons';
 
 
-const body = document.getElementById('gradient');
+const body = document.getElementById('root');
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends Component {
     this.state = {
       color1: "rgb(255, 0, 0)",
       color2: "rgb(0, 0, 255)",
-      degree: 0
+      degree: 0,
     }
     this.handleChange1 = this.handleChange1.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
@@ -64,10 +65,15 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="f1 underline">Color Generator</h1>
-        <button onClick={this.randomButton}>Click ME!</button>
+        <button className="grow dib pointer" onClick={this.randomButton}>Randmonize!</button>
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={body.style.background}/>
+        <div>
+          <CopyToClipboard text={body.style.background}>
+            <button className="grow dib pointer">Copy to clipboard!</button>
+          </CopyToClipboard>
+        </div>
       </div>
     );
   }
