@@ -7,7 +7,7 @@ import './App.css';
 import 'tachyons';
 
 
-const body = document.getElementById('root');
+const body = document.getElementById('gradient');
 
 class App extends Component {
   constructor(props) {
