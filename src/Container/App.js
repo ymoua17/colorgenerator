@@ -59,6 +59,9 @@ class App extends Component {
     const { color1, color2, degree } = this.state;
     const changeBackground = (c1, c2, d) => {
       body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2})`;
+      body.style.backgroundRepeat = "no-repeat";
+      body.style.backgroundSize = "cover";
+      body.style.backgroundAttachment = "fixed";
   }
     changeBackground(color2, color1, degree);
 
