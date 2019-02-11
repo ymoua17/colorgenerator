@@ -57,11 +57,13 @@ class App extends Component {
 
   render() {
     const { color1, color2, degree } = this.state;
+    let codeCopy = "";
     const changeBackground = (c1, c2, d) => {
       body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2})`;
       body.style.backgroundRepeat = "no-repeat";
       body.style.backgroundSize = "cover";
       body.style.backgroundAttachment = "fixed";
+      codeCopy = `linear-gradient(${d}deg, ${c1}, ${c2})`;
   }
     changeBackground(color2, color1, degree);
 
@@ -71,9 +73,9 @@ class App extends Component {
         <button className="grow dib pointer" onClick={this.randomButton}>Randmonize!</button>
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
-        <Code code={body.style.background}/>
+        <Code code={codeCopy}/>
         <div className="pb4">
-          <CopyToClipboard text={body.style.background}>
+          <CopyToClipboard text={codeCopy}>
             <button className="grow dib pointer">Copy to clipboard!</button>
           </CopyToClipboard>
         </div>
