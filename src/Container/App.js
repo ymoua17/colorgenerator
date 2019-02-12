@@ -24,15 +24,20 @@ class App extends Component {
     this.randomButton = this.randomButton.bind(this);
   }
   handleChange1(color) {
+    const r = color.rgb.r;
+    const g = color.rgb.g;
+    const b = color.rgb.b;
     this.setState({
-      color1: color.hex
+      color1: `rgb(${r}, ${g}, ${b})`
     })
   }
   handleChange2(color) {
+    const r = color.rgb.r;
+    const g = color.rgb.g;
+    const b = color.rgb.b;
     this.setState({
-      color2: color.hex
+      color2: `rgb(${r}, ${g}, ${b})`
     })
-    console.log(color.hex)
   }
   degreeChange(event) {
     this.setState({
