@@ -7,6 +7,7 @@ import './App.css';
 import 'tachyons';
 
 
+// Update background color part 1.
 const body = document.getElementById('gradient');
 
 class App extends Component {
@@ -56,27 +57,26 @@ class App extends Component {
   }
 
   render() {
+
+    // Update background part 2.
     const { color1, color2, degree } = this.state;
     let codeCopy = "";
     const changeBackground = (c1, c2, d) => {
-      body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2})`;
-      body.style.backgroundRepeat = "no-repeat";
-      body.style.backgroundSize = "cover";
-      body.style.backgroundAttachment = "fixed";
-      codeCopy = `linear-gradient(${d}deg, ${c1}, ${c2})`;
+      codeCopy = `linear-gradient(${d}deg, ${c1}, ${c2})`
+      body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2}) 0% 0% / cover no-repeat fixed`;
   }
     changeBackground(color2, color1, degree);
 
     return (
       <div className="App pv2">
         <h1 className="f1 underline">Color Generator</h1>
-        <button className="grow dib pointer" onClick={this.randomButton}>Randmonize!</button>
+        <button className="grow dib pointer dim pa2 fw6" onClick={this.randomButton}>Randmonize!</button>
         <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={codeCopy}/>
         <div className="pb4">
           <CopyToClipboard text={codeCopy}>
-            <button className="grow dib pointer">Copy to clipboard!</button>
+            <button className="grow dib pointer pa2 fw6">Copy to clipboard!</button>
           </CopyToClipboard>
         </div>
       </div>
