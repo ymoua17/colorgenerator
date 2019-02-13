@@ -4,7 +4,7 @@ import './colorwheel.css';
 
 const RandomButton = ({ randomButton }) => {
     return(
-        <img src={colorWheel} alt="randominze!" className="size pointer pa2 fw6 shadow-4" onClick={randomButton} />
+        <img src={colorWheel} alt="randominze!" className="size pointer pa2 fw6 shadow-5" onClick={randomButton} />
     )
 }
 
