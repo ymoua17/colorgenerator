@@ -1,3 +1,3 @@
 # colorgenerator
-// A mobile responsive web application built with React to provide users a customizable background gradient that can be directly copied into their own css code.
+// A responsive web application built with React to provide users a customizable background gradient that can be directly copied into their own css code.
   
