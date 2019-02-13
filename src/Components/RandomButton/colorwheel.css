@@ -1,0 +1,15 @@
+.size {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+	-webkit-animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
