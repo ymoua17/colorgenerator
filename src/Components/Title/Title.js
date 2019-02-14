@@ -3,7 +3,7 @@ import './Title.css';
 
 const Title = () => {
     return (
-        <div>
+        <div className="pb4">
             <h1 className="f1 underline">
                 <span className="red">C</span>
                 <span className="orange">o</span>
@@ -20,6 +20,7 @@ const Title = () => {
                 <span className="dark-pink">o</span>
                 <span className="dark-red">r</span>
             </h1>
+            <a href="https://github.com/ymoua17/colorgenerator" target="blank" className="fw6 black no-underline dim">Created by ymoua17.</a>
         </div>
     )
 }
