@@ -25,6 +25,7 @@ class App extends Component {
     this.degreeChange = this.degreeChange.bind(this);
     this.randomButton = this.randomButton.bind(this);
   }
+// updates the state of the colors to user's input
   colorChange1(color) {
     const r = color.rgb.r;
     const g = color.rgb.g;
@@ -41,16 +42,20 @@ class App extends Component {
       color2: `rgb(${r}, ${g}, ${b})`
     })
   }
+// updates the state of the degree value to user's numeric value.
   degreeChange(event) {
     this.setState({
       degree: event.target.value
     })
   }
+// creates a random gradient.
   randomButton() {
     let degreeVal = Math.floor((Math.random() * 360) + 1);
     let rgbArr1 = [];
     let rgbArr2 = [];
     let i = 0;
+/* creates three random values between 0 and 255 for r, g, and b. 
+Pushes each value into an array for create a randomnized. */
     while (i < 3) {
       rgbArr1.push(Math.floor((Math.random() * 255) + 1));
       rgbArr2.push(Math.floor((Math.random() * 255) + 1));
@@ -64,12 +69,13 @@ class App extends Component {
   }
 
   render() {
-
-    // Update background part 2.
+    //text for 
+    let copyOfCode = "";
+    // Update background part 2, function reads the state and updates the background style.
     const { color1, color2, degree } = this.state;
-    let codeCopy = "";
+    
     const changeBackground = (c1, c2, d) => {
-      codeCopy = `linear-gradient(${d}deg, ${c1}, ${c2})`
+      copyOfCode = `linear-gradient(${d}deg, ${c1}, ${c2})`
       body.style.background = `linear-gradient(${d}deg, ${c1}, ${c2}) 0% 0% / cover no-repeat fixed`;
   }
     changeBackground(color2, color1, degree);
@@ -80,9 +86,9 @@ class App extends Component {
         <RandomButton randomButton={this.randomButton} />
         <Colors color1={this.state.color1} colorChange1={this.handleChange1} color2={this.state.color2} colorChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
-        <Code code={codeCopy}/>
+        <Code code={copyOfCode}/>
         <div className="pb4">
-          <CopyToClipboard text={codeCopy}>
+          <CopyToClipboard text={copyOfCode}>
             <button className="grow dib pointer pa2 fw6">Copy to clipboard!</button>
           </CopyToClipboard>
         </div>

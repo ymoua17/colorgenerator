@@ -5,9 +5,9 @@ const Title = () => {
     return (
         <div>
             <h1 className="f1 underline">
-                <span className="white">C</span>
-                <span className="red">o</span>
-                <span className="orange">l</span>
+                <span className="red">C</span>
+                <span className="orange">o</span>
+                <span className="gold">l</span>
                 <span className="yellow">o</span>
                 <span className="green">r </span>
                 <span className="light-green">G</span>
