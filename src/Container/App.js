@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Title from '../Components/Title/Title';
 import RandomButton from '../Components/RandomButton/RandomButton';
 import Colors from '../Components/Colors/Colors';
 import Specifications from '../Components/Specifications/Specifications';
@@ -19,12 +20,12 @@ class App extends Component {
       color2: "rgb(0, 0, 255)",
       degree: 0,
     }
-    this.handleChange1 = this.handleChange1.bind(this);
-    this.handleChange2 = this.handleChange2.bind(this);
+    this.colorChange1 = this.colorChange1.bind(this);
+    this.colorChange2 = this.colorChange2.bind(this);
     this.degreeChange = this.degreeChange.bind(this);
     this.randomButton = this.randomButton.bind(this);
   }
-  handleChange1(color) {
+  colorChange1(color) {
     const r = color.rgb.r;
     const g = color.rgb.g;
     const b = color.rgb.b;
@@ -32,7 +33,7 @@ class App extends Component {
       color1: `rgb(${r}, ${g}, ${b})`
     })
   }
-  handleChange2(color) {
+  colorChange2(color) {
     const r = color.rgb.r;
     const g = color.rgb.g;
     const b = color.rgb.b;
@@ -75,10 +76,9 @@ class App extends Component {
 
     return (
       <div className="App pv2">
-        <h1 className="f1 underline">Color Generator</h1>
+        <Title />
         <RandomButton randomButton={this.randomButton} />
-        
-        <Colors color1={this.state.color1} handleChange1={this.handleChange1} color2={this.state.color2} handleChange2={this.handleChange2}/>
+        <Colors color1={this.state.color1} colorChange1={this.handleChange1} color2={this.state.color2} colorChange2={this.handleChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={codeCopy}/>
         <div className="pb4">
