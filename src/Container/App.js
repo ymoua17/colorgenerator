@@ -16,8 +16,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color1: "rgb(255, 0, 0)",
-      color2: "rgb(0, 0, 255)",
+      color1: "rgb(0, 250, 255)",
+      color2: "rgb(70, 0, 255)",
       degree: 0,
     }
     this.colorChange1 = this.colorChange1.bind(this);
@@ -84,7 +84,7 @@ Pushes each value into an array for create a randomnized. */
       <div className="App pv2">
         <Title />
         <RandomButton randomButton={this.randomButton} />
-        <Colors color1={this.state.color1} colorChange1={this.handleChange1} color2={this.state.color2} colorChange2={this.handleChange2}/>
+        <Colors color1={this.state.color1} colorChange1={this.colorChange1} color2={this.state.color2} colorChange2={this.colorChange2}/>
         <Specifications degree={this.state.degree} degreeChange={this.degreeChange} />
         <Code code={copyOfCode}/>
         <div className="pb4">
