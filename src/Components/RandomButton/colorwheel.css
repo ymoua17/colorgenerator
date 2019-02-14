@@ -2,7 +2,7 @@
     height: 125px;
     width: 125px;
     border-radius: 50%;
-	-webkit-animation: rotation 5s infinite linear;
+	-webkit-animation: rotation 10s infinite linear;
 }
 
 @-webkit-keyframes rotation {
@@ -17,5 +17,4 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
 }
