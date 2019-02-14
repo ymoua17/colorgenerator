@@ -20,7 +20,7 @@ const Title = () => {
                 <span className="dark-pink">o</span>
                 <span className="dark-red">r</span>
             </h1>
-            <a href="https://github.com/ymoua17/colorgenerator" target="blank" className="fw6 black no-underline dim">Created by ymoua17.</a>
+            <a href="https://github.com/ymoua17/colorgenerator" target="blank" className="fw6 black no-underline dim">*Created by ymoua17*</a>
         </div>
     )
 }
