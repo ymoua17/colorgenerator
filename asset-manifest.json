@@ -1,16 +1,16 @@
 {
-  "main.css": "/colorgenerator/static/css/main.32491d99.chunk.css",
-  "main.js": "/colorgenerator/static/js/main.9a11fd21.chunk.js",
-  "main.js.map": "/colorgenerator/static/js/main.9a11fd21.chunk.js.map",
+  "main.css": "/colorgenerator/static/css/main.43d4726e.chunk.css",
+  "main.js": "/colorgenerator/static/js/main.f77fa3a0.chunk.js",
+  "main.js.map": "/colorgenerator/static/js/main.f77fa3a0.chunk.js.map",
   "static/css/1.e789b312.chunk.css": "/colorgenerator/static/css/1.e789b312.chunk.css",
   "static/js/1.1b84e96e.chunk.js": "/colorgenerator/static/js/1.1b84e96e.chunk.js",
   "static/js/1.1b84e96e.chunk.js.map": "/colorgenerator/static/js/1.1b84e96e.chunk.js.map",
   "runtime~main.js": "/colorgenerator/static/js/runtime~main.3126e634.js",
   "runtime~main.js.map": "/colorgenerator/static/js/runtime~main.3126e634.js.map",
-  "static/css/1.e789b312.chunk.css.map": "/colorgenerator/static/css/1.e789b312.chunk.css.map",
+  "static/css/main.43d4726e.chunk.css.map": "/colorgenerator/static/css/main.43d4726e.chunk.css.map",
   "static/media/colorwheel.png": "/colorgenerator/static/media/colorwheel.884fa3b0.png",
-  "static/css/main.32491d99.chunk.css.map": "/colorgenerator/static/css/main.32491d99.chunk.css.map",
+  "static/css/1.e789b312.chunk.css.map": "/colorgenerator/static/css/1.e789b312.chunk.css.map",
   "index.html": "/colorgenerator/index.html",
-  "precache-manifest.1bbf6353304396236af29a154b98b621.js": "/colorgenerator/precache-manifest.1bbf6353304396236af29a154b98b621.js",
+  "precache-manifest.ed425fdc1288de26d66c12c6a1104ab6.js": "/colorgenerator/precache-manifest.ed425fdc1288de26d66c12c6a1104ab6.js",
   "service-worker.js": "/colorgenerator/service-worker.js"
 }
