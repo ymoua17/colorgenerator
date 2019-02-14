@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/colorgenerator/static/js/runtime~main.3126e634.js"
   },
   {
-    "revision": "b3b7197950554eebeb8e",
-    "url": "/colorgenerator/static/js/main.b3b71979.chunk.js"
+    "revision": "574562c37549e290e031",
+    "url": "/colorgenerator/static/js/main.574562c3.chunk.js"
   },
   {
     "revision": "1b84e96ebd041d80cf01",
     "url": "/colorgenerator/static/js/1.1b84e96e.chunk.js"
   },
   {
-    "revision": "b3b7197950554eebeb8e",
-    "url": "/colorgenerator/static/css/main.43d4726e.chunk.css"
+    "revision": "574562c37549e290e031",
+    "url": "/colorgenerator/static/css/main.febe42e9.chunk.css"
   },
   {
     "revision": "1b84e96ebd041d80cf01",
     "url": "/colorgenerator/static/css/1.e789b312.chunk.css"
   },
   {
-    "revision": "ce5d51af59f0b1aed61502734535159f",
+    "revision": "a28ed4acccc4069669a054384d2b42b5",
     "url": "/colorgenerator/index.html"
   }
 ];
