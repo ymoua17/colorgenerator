@@ -1,16 +1,18 @@
 {
-  "main.css": "/colorgenerator/static/css/main.febe42e9.chunk.css",
-  "main.js": "/colorgenerator/static/js/main.77b5172c.chunk.js",
-  "main.js.map": "/colorgenerator/static/js/main.77b5172c.chunk.js.map",
-  "static/css/1.e789b312.chunk.css": "/colorgenerator/static/css/1.e789b312.chunk.css",
-  "static/js/1.1b84e96e.chunk.js": "/colorgenerator/static/js/1.1b84e96e.chunk.js",
-  "static/js/1.1b84e96e.chunk.js.map": "/colorgenerator/static/js/1.1b84e96e.chunk.js.map",
-  "runtime~main.js": "/colorgenerator/static/js/runtime~main.3126e634.js",
-  "runtime~main.js.map": "/colorgenerator/static/js/runtime~main.3126e634.js.map",
-  "static/css/1.e789b312.chunk.css.map": "/colorgenerator/static/css/1.e789b312.chunk.css.map",
-  "static/media/colorwheel.png": "/colorgenerator/static/media/colorwheel.884fa3b0.png",
-  "static/css/main.febe42e9.chunk.css.map": "/colorgenerator/static/css/main.febe42e9.chunk.css.map",
-  "index.html": "/colorgenerator/index.html",
-  "precache-manifest.7061f1f81073f2dc8e73e701bc403c00.js": "/colorgenerator/precache-manifest.7061f1f81073f2dc8e73e701bc403c00.js",
-  "service-worker.js": "/colorgenerator/service-worker.js"
+  "files": {
+    "main.css": "/colorgenerator/static/css/main.9b8e0465.chunk.css",
+    "main.js": "/colorgenerator/static/js/main.85ff8e5d.chunk.js",
+    "main.js.map": "/colorgenerator/static/js/main.85ff8e5d.chunk.js.map",
+    "runtime~main.js": "/colorgenerator/static/js/runtime~main.331c21f8.js",
+    "runtime~main.js.map": "/colorgenerator/static/js/runtime~main.331c21f8.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/colorgenerator/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.f54dcf9e.chunk.js": "/colorgenerator/static/js/2.f54dcf9e.chunk.js",
+    "static/js/2.f54dcf9e.chunk.js.map": "/colorgenerator/static/js/2.f54dcf9e.chunk.js.map",
+    "index.html": "/colorgenerator/index.html",
+    "precache-manifest.ac82d9a73c5d07fbacc8b73910487d9b.js": "/colorgenerator/precache-manifest.ac82d9a73c5d07fbacc8b73910487d9b.js",
+    "service-worker.js": "/colorgenerator/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/colorgenerator/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.9b8e0465.chunk.css.map": "/colorgenerator/static/css/main.9b8e0465.chunk.css.map",
+    "static/media/colorwheel.png": "/colorgenerator/static/media/colorwheel.884fa3b0.png"
+  }
 }
