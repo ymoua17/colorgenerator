@@ -10,7 +10,7 @@
     "react-dom": "^16.7.0",
     "react-scripts": "^3.4.1",
     "tachyons": "^4.11.1",
-    "terser": "^3.14.1"
+    "terser": "^4.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
